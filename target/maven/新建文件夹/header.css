@@ -1,0 +1,13 @@
+/* CSS Document */
+*{margin: 0;transition-duration:1s;}
+a{text-decoration:none;transition-duration:0.1s;color:#000000;}
+.a{font-size:50px;color:#ffffff}
+#header{width: 100%;position:fixed;left:0;top: 0;opacity:0.9;z-index:99;}
+#header-1{height:50px;width: 100%;display:flex;justify-content:space-around;align-items:center;opacity:1;background-color:#dfe4e5;}
+#header-2{height:900px;width: 100%;position:relative;left: -100%;opacity: 1;background-color:#dfe4e5;}
+#header-2{height:600px;width: 100%;position:absolute;left: -100%;opacity: 1;background-color:#dfe4e5;}
+#header-2{display:flex;Flex-direction:column;align-items:center;}
+#mav-2{padding:10px;height:30px;width:2%;display:flex;Flex-direction:column;justify-content:center;cursor: pointer;background-color:#dfe4e5;}
+#mav-2 span{border-top: 5px solid #000000;width:100%;margin-top:2px;background-color:#dfe4e5;}
+
+
