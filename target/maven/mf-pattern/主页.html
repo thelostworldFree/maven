@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.1.min.js"></script><!--引入jQuery库-->
+    <script src="myfocus-2.0.1.min.js"></script><!--引入myFocus库-->
+    <script src="mF_rapoo.js"></script><!--引入风格js文件-->
+    <link href="mF_rapoo.css" type="text/css" /><!--引入风格css文件-->
+    <script>
+        myFocus.set({id:'boxID'});
+    </script>
+    <script>
+        myFocus.set({
+            id:'boxID',//焦点图盒子ID
+            pattern:'mF_fancy',//风格应用的名称
+            time:3,//切换时间间隔(秒)
+            trigger:'click',//触发切换模式:'click'(点击)/'mouseover'(悬停)
+            width:450,//设置图片区域宽度(像素)
+            height:296,//设置图片区域高度(像素)
+            txtHeight:'default'//文字层高度设置(像素),'default'为默认高度，0为隐藏
+        });
+    </script>
+    <style>
+        #boxID{width: 1500px;
+        height: 586px;
+        margin:0 auto;
+        }
+         li{list-style-type: none;}
+     #big{color:red;
+     width: 250px;
+     height: 50px;
+     margin: 0 auto;
+     }
+     body{background-image: url(img/2015.jpg);}
+     #first{width: 620px; height: 600px; background: red;float:left;}
+     #second{width: 620px; height: 600px;background: skyblue;float:left;margin-left: 10px;}
+     #thirth{width: 620px; height: 600px;background: #ccc;float:left;margin-left: 10px;}
+     #imp{width: 1890px;height: 600px;float:left;margin-left: 10px;}
+     h2{border: 2px solid black;height: 50px;line-height: 50px;width: 1500px;margin:0 auto;}
+     a{text-decoration: none;}
+    
+    </style>
+</head>
+<body>
+    <div id="big"><h1>个人博客-<设计></h1></div>
+    <h2 align="center">
+		<font title="首页"><a href="#">首页</a></font>
+		<font title="关于我"><a href="#">关于我</a></font>
+		<font title="文章"><a href="#">文章</a></font>
+      	<font title="心情"><a href="#">心情</a></font>
+		<font title="相册"><a href="#">相册</a></font>
+	</h2>
+    <div id="boxID"><!--焦点图盒子-->
+        <!--<div class="loading"><img src="img/loading.gif" alt="请稍候..." /></div><!--载入画面(可删除)-->
+        <div class="pic"><!--内容列表(li数目可随意增减)-->
+            <ul>
+                <li><a href="#"><img src="img/1.jpg" alt="标题1" text="详细描述1" /></a></li>
+                <li><a href="#"><img src="img/2.jpg" alt="标题2" text="详细描述2" /></a></li>
+                <li><a href="#"><img src="img/3.jpg" alt="标题3" text="详细描述3" /></a></li>
+                <li><a href="#"><img src="img/4.jpg" alt="标题4" text="详细描述4" /></a></li>
+                <li><a href="#"><img src="img/5.jpg" alt="标题5" text="详细描述5" /></a></li>
+                <li><a href="#"><img src="img/6.jpg" alt="标题6" text="详细描述6" /></a></li>
+                <li><a href="#"><img src="img/7.jpg" alt="标题7" text="详细描述7" /></a></li>
+                <li><a href="#"><img src="img/8.jpg" alt="标题8" text="详细描述8" /></a></li>
+              
+            </ul>
+        </div>
+    </div>
+    <div id="imp">
+    <div id="first">
+        <li></li>
+    </div>
+    <div id="second">
+        <li></li>
+    </div>
+    <div id="thirth">
+        <li></li>
+    </div>
+    </div>
+</body>
+</html>
